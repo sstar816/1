@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <title>HTML Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망찬고등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="ri-book-open-line"></i> 희망찬고등학교 도서관
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-4-line"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="about.html">도서관 소개</a></li>
+            <li><a href="recommendations.html">학과별 추천도서</a></li>
+            <li><a href="new-books.html">신착도서</a></li>
+            <li><a href="events.html">공지 및 행사</a></li>
+        </ul>
+    </nav>
 
-  <p> <h1>"학교도서관"이라 함은 고등학교 이하의 각급 학교(초등교육기관, 중등교육기관)에서 교사와 학생, 직원에게 도서관서비스를 제공하는 것을 주된 목적으로 하는 도서관을 말한다(도서관법 제2조 제6호).</h1></p>
+    <div class="hero">
+        <div class="fade-in">
+            <h1>꿈과 희망이 자라는<br>지식의 숲</h1>
+            <p>희망찬고등학교 스마트 도서관에 오신 것을 환영합니다.<br>여러분의 미래를 위한 책들이 이곳에 준비되어 있습니다.</p>
+            <div style="margin-top: 2rem;">
+                <a href="recommendations.html" class="btn">추천 도서 보기</a>
+                <a href="about.html" class="btn btn-secondary" style="margin-left: 1rem;">이용 안내</a>
+            </div>
+        </div>
+    </div>
 
- <p>말 그대로 <a href="http://www.daum.net/">다음</a> 학교도서관으로 대학을 제외한 하위 교육기관에 속한 도서관들을 가리킨다. 학교 소속인 만큼 학생들이 주 이용자이므로 청소년이나 어린이를 위한 도서를 중점적으로 수집한다. 이외에도 그 학교와 관련된 자료[1]나 교직원들을 위한 자료를 따로 수집하기도 한다. 도서실로도 많이 불린다. </p>
+    <div class="container">
+        <div class="card-grid">
+            <div class="card fade-in" style="animation-delay: 0.1s;">
+                <i class="ri-building-4-line" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <h3>도서관 소개</h3>
+                <p>우리 도서관의 역사와 시설을 소개합니다. 쾌적한 학습 공간과 휴게 공간을 만나보세요.</p>
+                <a href="about.html"
+                    style="color: var(--primary); font-weight: 600; margin-top: 1rem; display: inline-block;">자세히 보기
+                    &rarr;</a>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.2s;">
+                <i class="ri-calendar-event-line"
+                    style="font-size: 2rem; color: var(--success); margin-bottom: 1rem;"></i>
+                <h3>공지 및 행사</h3>
+                <p>독서 퀴즈 대회, 저자 초청 강연 등 다양한 도서관 행사에 참여해보세요.</p>
+                <a href="events.html"
+                    style="color: var(--success); font-weight: 600; margin-top: 1rem; display: inline-block;">자세히 보기
+                    &rarr;</a>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.3s;">
+                <i class="ri-sparkling-fill" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>신착도서</h3>
+                <p>매달 들어오는 따끈따끈한 새 책 소식. 가장 먼저 확인하고 대출하세요.</p>
+                <a href="new-books.html"
+                    style="color: var(--accent); font-weight: 600; margin-top: 1rem; display: inline-block;">자세히 보기
+                    &rarr;</a>
+            </div>
+            <div class="card fade-in" style="animation-delay: 0.4s;">
+                <i class="ri-book-read-line" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                <h3>학과별 추천도서</h3>
+                <p>IT콘텐츠, 보건간호, 뷰티미용, 외식조리과 학생들을 위한 맞춤형 도서를 추천해드립니다.</p>
+                <a href="recommendations.html"
+                    style="color: var(--secondary); font-weight: 600; margin-top: 1rem; display: inline-block;">자세히 보기
+                    &rarr;</a>
+            </div>
+        </div>
+    </div>
 
- <p><a href="http://www.tcpschool.com/">TCP스쿨</a>초등교육기관, 중등교육기관에는 학교도서관을 설치하여야 하며(같은 법 제37조), 학교도서관은 초·중등교육법과 사립학교법 및 그 밖의 법률의 규정에 따른 해당학교의 감독청의 지도·감독을 받는다(같은 법 제39조).</p>
-<img src="https://i.namu.wiki/i/QY6Q4ljEGVCrpHlCFhor1pN3aV0ursJQnPitHRikC74jHEZXLQQxP1kOningwOFaE5UcKNCqDzHRvoomI9uZwz-ho6zXv8tI_M4aRvMkencPfcOUC70pnRQ-Xd28TbOrCSrhhluvowyZh3K5mpKscg.webp" alt="대체문자열">
- <p>학교도서관은 학생 및 교원 등의 교수, 학습활동을 지원하기 위하여 다음 각 호의 업무를 수행한다(같은 법 제38조).</p>
- <p>학교교육에 필요한 도서관자료의 수집·정리·보존 및 이용서비스 제공</p>
- <p>학교소장 교육 자료의 통합관리 및 이용 제공</p>
- <p>시청각자료 및 멀티미디어 자료의 개발·제작 및 이용 제공</p>
- <p>정보관리시스템과 통신망을 이용한 정보공유체제의 구축 및 이용 제공</p>
- <p>도서관 이용의 지도 및 독서교육, 협동수업 등을 통한 정보 활용의 교육</p>
- <p>그 밖에 학교도서관으로서 해야 할 기능수행에 필요한 업무</p>
-<table style="width:100%">
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>희망찬고등학교 도서관</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    서울특별시 희망찬구 미래로 123<br>
+                    TEL: 02-1234-5678
+                </p>
+            </div>
+            <div>
+                <h4>운영 시간</h4>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    평일: 08:00 - 21:00<br>
+                    주말: 09:00 - 17:00
+                </p>
+            </div>
+        </div>
+    </footer>
 
-    <tr style="background-color:lightgrey">
-
-        <th>국어</th>
-
-        <th>수학</th>      
-
-    </tr>
-
-    <tr>
-
-        <td>슬기로운 국어생활</td>
-
-        <td>슬기로운 수학생활</td>
-
-    </tr>
-
-    <tr>
-
-        <td>독해</td>
-
-        <td>수학익힘책</td>
-
-    </tr>
-
-</table>
-  <p> </p>
-즉, 학생들을 위한 다양한 도서의 배치와 더불어 교직원들의 수업 및 과제, 아이디어 제공에 필요한 수많은 교과자료의 제공을 중요시한다.
-
-관련 법률로 학교도서관진흥법이 있다.</h1>
-
+    <script src="script.js"></script>
 </body>
-
- 
 
 </html>
